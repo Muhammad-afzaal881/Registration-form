@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sign" id="sign">
+                <h1>Sign up</h1>
+                    <input type="text" placeholder="Enter full name" required id="name"><br>
+                    <input type="text" placeholder="Enter Username" required><br>
+                    <input type="email" placeholder="Enter Email" required><br>
+                    <input type="password" placeholder="Enter password" required><br>
+                    <input type="password" placeholder="Enter re-password" required><br>
+                    <button type="submit" id="btn" onclick="sign()">Sign up</button>
+                    <p>Already have an account <a href="#" onclick="login()">Log in </a></p>
+            </div>
+             <div class="login" id="login">
+                <h1>Log in</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email" required><br>
+                    <input type="password" placeholder="Enter password" required><br>
+                    <button type="submit" onclick="profile()">Login</button>
+                     <p>Forget password <a href="#" id="loginlink" onclick="clickhere()">click here </a></p>
+                </form>
+            </div>
+            <div class="reset" id="reset">
+                <h1>Reset password</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email" required><br>
+                    <input type="password" placeholder="Enter password" required><br>
+                      <input type="password" placeholder="Confirm password" required><br>
+                    <button type="submit">Login</button>
+                     <p>Go back sign page <a href="#" id="resetcard" onclick="back()">click here </a></p>
+                </form>
+            </div>
+            <div class="message" id="message">
+                <h2>Account will be created</h2>
+                    <button type="submit" onclick="message()">Okay</button>
+            </div>
+            <div class="profile" id="profile">
+                <div class="top">
+                     <img src="https://ui-avatars.com/api/?name=Malik+afzaal">
+                </div>
+                <h1 id="text"></h1>
+                <p>Youtuber & vlogger</p>
+                <div class="a">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <button>Subscribe</button>
+            <button>Message</button>
+            <p style="font-size: 25px; margin-top: 20px; margin-left: 45px;" ><ion-icon name="heart-outline">
+            </ion-icon>80.4k|<ion-icon name="pricetags-outline"></ion-icon>45.3k
+            |<ion-icon name="share-social-outline"></ion-icon>30k</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
